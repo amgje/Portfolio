@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modelling dust impacts in Solar Orbiter spacecraft data — Amalie Gjelsvik</title><link rel="stylesheet" href="../styles.css"></head>
+<body><header class="site-header"><div class="container nav"><a class="brand" href="../index.html">Amalie Gjelsvik</a><nav class="nav-links"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></div></header>
+<main>
+<section class="project-hero"><div class="container"><p class="kicker">Project 03</p><h1>Modelling dust impacts in Solar Orbiter spacecraft data</h1><p class="project-summary">Signal preprocessing, instrument correction, physics-based nonlinear fitting and mission-scale population analysis using Solar Orbiter RPW telemetry.</p><div class="project-facts"><span><strong>6 months</strong> of observations</span><span><strong>1,920</strong> fitted signals</span><span><strong>1,550</strong> quality-controlled fits</span></div></div></section>
+
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Preprocessing</p>
+      <h2>Correcting the measurement chain before fitting.</h2>
+      <p>The raw RPW waveforms required DC-offset removal, numerical correction of an artefact introduced by the onboard 200 Hz high-pass filter, event extraction and an 8-point running-average filter.</p>
+      <div class="process">Raw waveform → DC correction → instrument-response correction → event extraction → low-pass filtering → resampling</div>
+      
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/solar_preprocessing.png" alt="Solar Orbiter preprocessing pipeline"></div>
+      <p class="caption">Progressive preprocessing of a dust-impact waveform.</p>
+    </div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Physical model fitting</p>
+      <h2>Estimating physical parameters from each event.</h2>
+      <p>I fitted a physical model describing the separate spacecraft and antenna potential responses. SciPy nonlinear optimisation estimated collected charge, relaxation times, rise time, charge fraction and separate response start times.</p><p>Fits were assessed not only by residual error, but also by whether the resulting parameter estimates were physically plausible.</p>
+      
+      
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/solar_model_fit.png" alt="Solar Orbiter model fit"></div>
+      <p class="caption">Measured voltage perturbation, total model fit and the spacecraft and antenna components.</p>
+    </div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Population analysis</p>
+      <h2>Scaling the analysis from one waveform to thousands.</h2>
+      <p>The single-event analysis was turned into an automated batch pipeline. After fitting 1,920 signals, boundary-limited and implausible parameter estimates were removed, leaving 1,550 quality-controlled fits for population analysis.</p>
+      
+      <p class="tools">Python, NumPy, SciPy, cdflib, numerical integration, nonlinear least-squares fitting, uncertainty analysis, batch processing, quality control</p>
+      <p><a class="text-link" href="YOUR_SOLAR_ORBITER_REPO_URL_HERE">View the code</a></p>
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/solar_relaxation_distribution.png" alt="Distribution of fitted relaxation times"></div>
+      <p class="caption">Distribution of fitted spacecraft and antenna relaxation times.</p>
+    </div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Mission-scale context</p>
+      <h2>Combining fitted results with spacecraft ephemeris data.</h2>
+      <p>The fitted event table was combined with Solar Orbiter heliocentric-distance data to examine whether fitted parameters varied across the spacecraft trajectory.</p>
+      
+      
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/solar_tau_distance.png" alt="Antenna relaxation time versus heliocentric distance"></div>
+      <p class="caption">Individual fitted events and binned population behaviour versus distance from the Sun.</p>
+    </div>
+  </div>
+</section>
+</main><footer><div class="container">© 2026 Amalie Gjelsvik</div></footer></body></html>

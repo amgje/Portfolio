@@ -49,7 +49,17 @@ h3{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:400
 .project-image img{width:100%;height:auto;object-fit:contain;object-position:center}
 .project-number{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--accent);margin-bottom:12px}
 .project-text p{color:var(--muted);margin:0 0 16px}
-.project-skills{font-size:.92rem;color:#4a4742;border-top:1px solid var(--line);padding-top:12px;margin-top:18px}
+.project-outcome{font-size:.96rem;color:#4a4742;margin:0 0 16px}
+.project-outcome strong{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--accent)}
+.project-meta{display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-top:1px solid var(--line);padding-top:12px;margin-top:18px}
+.project-skills{font-size:.92rem;color:#4a4742}
+.code-link{font-size:.92rem;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;white-space:nowrap}
+.code-link:hover{opacity:.72}
+.testimonials{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.testimonial blockquote{margin:0 0 16px;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:1.3rem;line-height:1.45;color:var(--ink)}
+.testimonial cite{font-style:normal;color:var(--muted);font-size:.92rem}
+.process-note{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);max-width:680px}
+.process-note strong{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--ink)}
 .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:80px}
 .about-copy p{color:var(--muted);max-width:720px}
 .about-details{border-top:1px solid var(--ink);padding-top:18px}
@@ -72,7 +82,8 @@ footer{padding:38px 0 60px;border-top:1px solid var(--line);color:#716e68;font-s
 .tools{color:#4f4c47;border-top:1px solid var(--line);margin-top:26px;padding-top:14px;font-size:.94rem}
 @media(max-width:850px){
   .container{width:min(var(--max),calc(100% - 30px))}
-  .services,.about-grid,.case-grid,.project-row,.project-row:nth-child(even),.credibility-inner{grid-template-columns:1fr}
+  .services,.about-grid,.case-grid,.project-row,.project-row:nth-child(even),.credibility-inner,.testimonials{grid-template-columns:1fr}
+  .project-meta{flex-direction:column;align-items:flex-start;gap:8px}
   .project-row:nth-child(even) .project-image,.project-row:nth-child(even) .project-text{order:initial}
   .hero{padding:80px 0 64px}
   .section,.case-section{padding:65px 0}
