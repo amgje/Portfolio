@@ -45,8 +45,8 @@ h3{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:400
 .project-row:nth-child(even){grid-template-columns:.75fr 1.25fr}
 .project-row:nth-child(even) .project-image{order:2}
 .project-row:nth-child(even) .project-text{order:1}
-.project-image{background:#fff;border:1px solid #d8d2c7}
-.project-image img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.project-image{background:#fff;border:1px solid #d8d2c7;overflow:hidden}
+.project-image img{width:100%;height:auto;object-fit:contain;object-position:center}
 .project-number{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--accent);margin-bottom:12px}
 .project-text p{color:var(--muted);margin:0 0 16px}
 .project-skills{font-size:.92rem;color:#4a4742;border-top:1px solid var(--line);padding-top:12px;margin-top:18px}
@@ -67,7 +67,7 @@ footer{padding:38px 0 60px;border-top:1px solid var(--line);color:#716e68;font-s
 .case-copy p{color:var(--muted)}
 .process{margin:28px 0 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;line-height:1.7}
 .figure{background:#fff;border:1px solid #d8d2c7}
-.figure img{width:100%}
+.figure img{width:100%;height:auto;object-fit:contain;object-position:center}
 .caption{color:#78746d;font-size:.88rem;margin-top:10px}
 .tools{color:#4f4c47;border-top:1px solid var(--line);margin-top:26px;padding-top:14px;font-size:.94rem}
 @media(max-width:850px){
