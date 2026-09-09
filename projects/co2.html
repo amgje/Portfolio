@@ -1,4 +1,51 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scientific data cleaning & calibration — Amalie Gjelsvik</title><link rel="stylesheet" href="../styles.css"></head><body><header class="site-header"><div class="container nav"><a class="brand" href="../index.html">Amalie Gjelsvik</a><nav class="nav-links"><a href="../index.html#work">Projects</a><a href="../index.html#contact">Contact</a></nav></div></header><main><section class="project-hero"><div class="container"><div class="eyebrow">Portfolio project 01</div><h1>Scientific data cleaning & automated QC for optical sensor measurements</h1><p class="meta">Synthetic case study showing how I handle inconsistent experimental files, missing data, duplicate rows, anomalous spikes and repeatable calibration analysis.</p><div class="metric-grid"><div class="metric"><strong>30</strong><span>input CSV files</span></div><div class="metric"><strong>12,000</strong><span>measurements</span></div><div class="metric"><strong>51</strong><span>QC issues flagged and handled</span></div></div></div></section>
-<section class="case-section"><div class="container case-grid"><div class="case-copy"><div class="eyebrow">Problem</div><h2>Messy experimental data before analysis.</h2><p>The source files contained inconsistent headers, duplicated rows, missing signal measurements, malformed numeric values and transient spikes. The goal was a reusable workflow that cleaned the data without silently altering it.</p><div class="flow">Raw files → schema standardisation → QC → spike detection → interpolation → clean master dataset</div></div><div><div class="figure"><img src="../assets/images/co2_raw_vs_cleaned.png" alt="Raw versus cleaned sensor signal"></div><p class="caption">Raw and cleaned example showing automatically detected signal spikes.</p></div></div></section>
-<section class="case-section"><div class="container case-grid"><div class="case-copy"><div class="eyebrow">Quality control</div><h2>Every correction was recorded.</h2><p>The pipeline standardised schemas, recovered numeric measurements stored as text, removed exact duplicate rows, flagged missing measurements and detected anomalous spikes. QC flags were retained in the final dataset.</p></div><div><div class="figure"><img src="../assets/images/co2_qc_summary.png" alt="Data quality summary"></div><p class="caption">Automated QC summary across all 30 files.</p></div></div></section>
-<section class="case-section"><div class="container case-grid"><div class="case-copy"><div class="eyebrow">Result</div><h2>Clean data to calibration result.</h2><p>The cleaned measurements were normalised against the reference channel, summarised across five repeated runs at each concentration, and used to produce a reproducible calibration analysis.</p><p class="tools"><strong>Tools:</strong> Python · pandas · NumPy · Matplotlib · robust outlier detection · batch processing</p></div><div><div class="figure"><img src="../assets/images/co2_calibration.png" alt="CO2 calibration result"></div><p class="caption">Calibration and repeatability analysis from the cleaned dataset.</p></div></div></section></main><footer><div class="container">© 2026 Amalie Gjelsvik.</div></footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scientific data cleaning and calibration — Amalie Gjelsvik</title><link rel="stylesheet" href="../styles.css"></head>
+<body><header class="site-header"><div class="container nav"><a class="brand" href="../index.html">Amalie Gjelsvik</a><nav class="nav-links"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></div></header>
+<main>
+<section class="project-hero"><div class="container"><p class="kicker">Project 01</p><h1>Scientific data cleaning and calibration</h1><p class="project-summary">A synthetic client-style case study showing how I handle inconsistent experimental files, missing data, duplicate rows, anomalous spikes and repeatable calibration analysis.</p><div class="project-facts"><span><strong>30</strong> input files</span><span><strong>12,000</strong> measurements</span><span><strong>5</strong> repeats per concentration</span></div></div></section>
+
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">The problem</p>
+      <h2>Messy experimental data before analysis.</h2>
+      <p>The source files contained inconsistent headers, duplicated rows, missing signal measurements, malformed numeric values and transient spikes. The aim was to build a reusable workflow that cleaned the data without silently altering it.</p>
+      <div class="process">Raw files → schema standardisation → quality control → spike detection → interpolation → clean master dataset</div>
+      
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/co2_raw_vs_cleaned.png" alt="Raw versus cleaned sensor signal"></div>
+      <p class="caption">Raw and cleaned example showing automatically detected signal spikes.</p>
+    </div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Quality control</p>
+      <h2>Every correction was recorded.</h2>
+      <p>The pipeline standardised schemas, recovered numeric measurements stored as text, removed exact duplicate rows, flagged missing measurements and detected anomalous spikes. Quality-control flags were retained in the final dataset.</p>
+      
+      
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/co2_qc_summary.png" alt="Data quality summary"></div>
+      <p class="caption">Automated quality-control summary across all 30 files.</p>
+    </div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="container case-grid">
+    <div class="case-copy">
+      <p class="section-label">Result</p>
+      <h2>From cleaned data to a reproducible calibration.</h2>
+      <p>The cleaned measurements were normalised against the reference channel, summarised across repeated runs at each concentration and used to produce a calibration analysis.</p>
+      
+      <p class="tools">Python, pandas, NumPy, Matplotlib, robust outlier detection, batch processing</p>
+    </div>
+    <div>
+      <div class="figure"><img src="../assets/images/co2_calibration.png" alt="CO2 calibration result"></div>
+      <p class="caption">Calibration and repeatability analysis from the cleaned dataset.</p>
+    </div>
+  </div>
+</section>
+</main><footer><div class="container">© 2026 Amalie Gjelsvik</div></footer></body></html>

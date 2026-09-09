@@ -1,19 +1,128 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Scientific data analysis, signal processing and Python automation portfolio of Amalie Gjelsvik."><title>Amalie Gjelsvik — Scientific Data Analysis & Python Automation</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="site-header"><div class="container nav"><a class="brand" href="index.html">Amalie Gjelsvik</a><nav class="nav-links"><a href="#services">Services</a><a href="#work">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<section class="hero"><div class="container"><div class="eyebrow">Scientific data analysis · Python · signal processing</div><h1>I turn messy scientific data into clear, reproducible analysis.</h1><p class="lede">I help researchers, engineers and technical teams clean, analyse and automate scientific data workflows using Python — from raw sensor files and noisy time series to fitted models and technical figures.</p><div class="actions"><a class="button primary" href="#work">View selected work</a><a class="button" href="#contact">Work with me</a></div></div></section>
-<section class="section" id="services"><div class="container"><div class="eyebrow">Services</div><h2>Practical help with technical data.</h2><p class="section-intro">Focused, clearly scoped work for scientific and technical datasets — not generic “Python development”.</p><div class="services">
-<article class="card"><h3>Scientific data cleaning</h3><p>Clean, validate, standardise and restructure CSV, Excel, HDF5 and other scientific datasets with transparent QC.</p></article>
-<article class="card"><h3>Analysis & visualisation</h3><p>Statistical analysis, signal processing, model fitting and clear figures for reports, presentations and research workflows.</p></article>
-<article class="card"><h3>Python automation</h3><p>Turn repetitive data processing, spreadsheet or reporting workflows into reusable Python scripts and pipelines.</p></article>
-</div></div></section>
-<section class="section" id="work"><div class="container"><div class="eyebrow">Selected work</div><h2>Three end-to-end data projects.</h2><p class="section-intro">Each project shows a different part of the work I can do: data cleaning, signal processing, modelling and automated analysis.</p><div class="projects-grid">
-<a class="card project-card" href="projects/co2.html"><img src="assets/images/co2_raw_vs_cleaned.png" alt="Raw and cleaned CO2 sensor signal"><div class="project-copy"><h3>Scientific data cleaning & calibration</h3><p>30 inconsistent experimental CSV files transformed into a validated dataset, automated QC pipeline and calibration analysis.</p><div class="tag-row"><span class="tag">pandas</span><span class="tag">QC</span><span class="tag">automation</span></div></div></a>
-<a class="card project-card" href="projects/ligo.html"><img src="assets/images/ligo_spectrogram.png" alt="LIGO spectrogram"><div class="project-copy"><h3>LIGO gravitational-wave signal processing</h3><p>Real HDF5 detector data processed using whitening, filtering, spectral analysis, time alignment and spectrograms.</p><div class="tag-row"><span class="tag">SciPy</span><span class="tag">HDF5</span><span class="tag">signal processing</span></div></div></a>
-<a class="card project-card" href="projects/solar-orbiter.html"><img src="assets/images/solar_model_fit.png" alt="Solar Orbiter dust impact model fit"><div class="project-copy"><h3>Solar Orbiter dust-impact modelling</h3><p>Spacecraft telemetry processed, physically modelled and batch-fitted across 1,920 signals with quality-controlled population analysis.</p><div class="tag-row"><span class="tag">nonlinear fitting</span><span class="tag">CDF</span><span class="tag">batch analysis</span></div></div></a>
-</div></div></section>
-<section class="section" id="about"><div class="container about-grid"><div><div class="eyebrow">About</div><h2>Scientific background, practical data focus.</h2><p class="lede">I am a PhD researcher in optics and photonics with an MSc in Space Physics. My work spans experimental data analysis, spectroscopy, signal processing, physical modelling and scientific Python.</p></div><div class="card"><h3>Typical tools</h3><ul class="fact-list"><li>Python, NumPy, pandas, SciPy</li><li>HDF5, CDF, CSV, Excel</li><li>Signal processing and filtering</li><li>Nonlinear optimisation and model fitting</li><li>Scientific visualisation</li></ul></div></div></section>
-<section class="section" id="contact"><div class="container"><div class="contact-box"><div class="eyebrow">Contact</div><h2>Have a dataset or repetitive analysis task?</h2><p class="lede">I’m available for small scientific-data projects, Python analysis and workflow automation.</p><div class="actions"><a class="button primary" href="mailto:gjelsvik.amalie@gmail.com">Email me</a><a class="button" href="www.linkedin.com/in/amalie-gjelsvik
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Scientific data analysis, signal processing and Python automation portfolio of Amalie Gjelsvik.">
+<title>Amalie Gjelsvik — Scientific Data Analysis</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Amalie Gjelsvik</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-">LinkedIn</a></div></div></div></section>
-</main><footer><div class="container">© 2026 Amalie Gjelsvik. Built with plain HTML & CSS.</div></footer></body></html>
+<main>
+<section class="hero">
+  <div class="container">
+    <p class="kicker">Scientific data analysis and Python</p>
+    <h1>Turning complex scientific data into useful results.</h1>
+    <p>I work with experimental and technical datasets: cleaning messy files, processing signals, fitting physical models and automating repetitive analysis in Python.</p>
+    <div class="hero-links">
+      <a class="text-link" href="#work">Selected work</a>
+      <a class="text-link" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="container">
+    <p class="section-label">Selected work</p>
+    <div class="projects">
+
+      <a class="project-row" href="projects/co2.html">
+        <div class="project-image"><img src="assets/images/co2_raw_vs_cleaned.png" alt="Raw and cleaned CO2 sensor signal"></div>
+        <div class="project-text">
+          <div class="project-number">01</div>
+          <h3>Scientific data cleaning and calibration</h3>
+          <p>Thirty inconsistent experimental files turned into a validated dataset, automated quality-control workflow and reproducible calibration analysis.</p>
+          <div class="project-skills">Python, pandas, data quality control, automation, visualisation</div>
+        </div>
+      </a>
+
+      <a class="project-row" href="projects/ligo.html">
+        <div class="project-image"><img src="assets/images/ligo_spectrogram.png" alt="LIGO spectrogram"></div>
+        <div class="project-text">
+          <div class="project-number">02</div>
+          <h3>LIGO gravitational-wave signal processing</h3>
+          <p>Real detector data processed using whitening, digital filtering, spectral analysis and detector time alignment.</p>
+          <div class="project-skills">SciPy, HDF5, FFT, filtering, cross-correlation, spectrograms</div>
+        </div>
+      </a>
+
+      <a class="project-row" href="projects/solar-orbiter.html">
+        <div class="project-image"><img src="assets/images/solar_model_fit.png" alt="Solar Orbiter dust impact model fit"></div>
+        <div class="project-text">
+          <div class="project-number">03</div>
+          <h3>Solar Orbiter dust-impact modelling</h3>
+          <p>Spacecraft telemetry processed and fitted with a physical model, then scaled to 1,920 events with automated quality control and population analysis.</p>
+          <div class="project-skills">Nonlinear fitting, CDF data, signal processing, physical modelling, batch analysis</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <p class="section-label">Services</p>
+    <h2>Help with scientific and technical data.</h2>
+    <p class="intro">I am most useful when a dataset is awkward, repetitive or technically specialised and needs a clear, reproducible workflow rather than a one-off spreadsheet fix.</p>
+    <div class="services">
+      <div class="service">
+        <h3>Data cleaning</h3>
+        <p>Cleaning, validating and restructuring CSV, Excel, HDF5 and scientific data files, with clear quality-control checks.</p>
+      </div>
+      <div class="service">
+        <h3>Analysis and visualisation</h3>
+        <p>Signal processing, model fitting, statistical analysis and technical figures for research and engineering datasets.</p>
+      </div>
+      <div class="service">
+        <h3>Python automation</h3>
+        <p>Reusable scripts for repetitive data processing, file handling, analysis and reporting workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <p class="section-label">About</p>
+      <h2>Research background with a practical data focus.</h2>
+      <p>I am a PhD researcher in optics and photonics with an MSc in Space Physics. My work involves experimental data, spectroscopy, signal processing, physical modelling and scientific programming.</p>
+      <p>I particularly enjoy the point between raw data and the final result: finding what is wrong with a dataset, building a sensible analysis workflow, and making the result reproducible.</p>
+    </div>
+    <div class="about-details">
+      <p><strong>Core tools</strong></p>
+      <p>Python, NumPy, pandas, SciPy</p>
+      <p>HDF5, CDF, CSV, Excel</p>
+      <p>Signal processing and filtering</p>
+      <p>Nonlinear optimisation and model fitting</p>
+      <p>Scientific visualisation</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact-line">
+    <p class="section-label">Contact</p>
+    <h2>Have data that needs sorting out?</h2>
+    <p>I am available for small scientific-data projects, Python analysis and workflow automation.</p>
+    <p><a class="text-link" href="mailto:YOUR_EMAIL_HERE">Email me</a>&nbsp;&nbsp;&nbsp; <a class="text-link" href="YOUR_LINKEDIN_URL_HERE">LinkedIn</a></p>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Amalie Gjelsvik</div></footer>
+</body>
+</html>
