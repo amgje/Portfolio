@@ -10,7 +10,6 @@
       <h2>Messy experimental data before analysis.</h2>
       <p>The source files contained inconsistent headers, duplicated rows, missing signal measurements, malformed numeric values and transient spikes. The aim was to build a reusable workflow that cleaned the data without silently altering it.</p>
       <div class="process">Raw files → schema standardisation → quality control → spike detection → interpolation → clean master dataset</div>
-      
     </div>
     <div>
       <div class="figure"><img src="../assets/images/co2_raw_vs_cleaned.png" alt="Raw versus cleaned sensor signal"></div>
@@ -24,8 +23,6 @@
       <p class="section-label">Quality control</p>
       <h2>Every correction was recorded.</h2>
       <p>The pipeline standardised schemas, recovered numeric measurements stored as text, removed exact duplicate rows, flagged missing measurements and detected anomalous spikes. Quality-control flags were retained in the final dataset.</p>
-      
-      
     </div>
     <div>
       <div class="figure"><img src="../assets/images/co2_qc_summary.png" alt="Data quality summary"></div>
@@ -39,9 +36,7 @@
       <p class="section-label">Result</p>
       <h2>From cleaned data to a reproducible calibration.</h2>
       <p>The cleaned measurements were normalised against the reference channel, summarised across repeated runs at each concentration and used to produce a calibration analysis.</p>
-      
       <p class="tools">Python, pandas, NumPy, Matplotlib, robust outlier detection, batch processing</p>
-      <p><a class="text-link" href="YOUR_CO2_REPO_URL_HERE">View the code</a></p>
     </div>
     <div>
       <div class="figure"><img src="../assets/images/co2_calibration.png" alt="CO2 calibration result"></div>
