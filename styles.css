@@ -63,6 +63,12 @@ h3{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:400
 .about-copy p{color:var(--muted);max-width:720px}
 .about-details{border-top:1px solid var(--ink);padding-top:18px}
 .about-details p{margin:0 0 10px;color:var(--muted)}
+.team{display:grid;grid-template-columns:1fr 1.4fr;gap:60px}
+.team-member{border-top:1px solid var(--ink);padding-top:18px}
+.team-member p{color:var(--muted);margin:0 0 14px}
+.team-member .team-role{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--accent);margin-bottom:16px}
+.team-tools{font-size:.94rem;border-top:1px solid var(--line);padding-top:12px}
+.team-tools strong{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--ink)}
 .contact-line{max-width:850px}
 .contact-line p{color:var(--muted);max-width:680px}
 footer{padding:38px 0 60px;border-top:1px solid var(--line);color:#716e68;font-size:.9rem}
@@ -81,7 +87,7 @@ footer{padding:38px 0 60px;border-top:1px solid var(--line);color:#716e68;font-s
 .tools{color:#4f4c47;border-top:1px solid var(--line);margin-top:26px;padding-top:14px;font-size:.94rem}
 @media(max-width:850px){
   .container{width:min(var(--max),calc(100% - 30px))}
-  .services,.about-grid,.case-grid,.credibility-inner,.testimonials{grid-template-columns:1fr}
+  .services,.about-grid,.case-grid,.credibility-inner,.testimonials,.team{grid-template-columns:1fr}
   .project-row,.project-row:nth-child(even){flex-direction:column}
   .project-image,.project-text{width:100%;flex:none}
   .project-meta{flex-direction:column;align-items:flex-start;gap:8px}
